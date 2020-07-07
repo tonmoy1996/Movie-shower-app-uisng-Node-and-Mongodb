@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Author</title>
+</head>
+<body>
+    <div class="container">
+    <h3>Author List</h3>
+
+        <table class="table">
+            <thead>
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Bio</th>
+            <th scope="col">Website</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% for( var i=0; i< auther.length; i++) { %>
+            <tr>
+                <td><%= auther[i].name%></td>
+                <td><%= auther[i].bio%></td>
+                <td><%= auther[i].website%></td>
+            </tr>
+            <% }%>
+        </tbody>
+        </table>
+    
+</body>
+</html>
